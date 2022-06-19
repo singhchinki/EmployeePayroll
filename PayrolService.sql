@@ -14,3 +14,7 @@ CREATE TABLE employee_payrole(
 
 	select Name,StartDate from employee_payrole where Name='Viahan';
 select * from employee_payrole where StartDate between cast('2005-01-01' as date) and getdate();
+
+alter table employee_payrole add Gender char(1);
+update employee_payrole set Gender='M';
+update employee_payrole set Gender='F' where Id='1';
