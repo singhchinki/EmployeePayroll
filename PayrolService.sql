@@ -39,3 +39,6 @@ Update employee_payrole set NetPay = (BasicPay-Deduction);
 Update employee_payrole set TaxablePay = '1000';
 Update employee_payrole set IncomeTax = '200';
 select * from employee_payrole;
+
+INSERT INTO employee_payrole(Name,BasicPay,StartDate,Gender,PhoneNumber,Department,Address,TaxablePay,Deduction,IncomeTax,NetPay) VALUES('Terissa','525245','2018/03/01','F','7345787969','Sales','Mumbai','1200','1650','2000','40013');
+INSERT INTO employee_payrole(Name,BasicPay,StartDate,Gender,PhoneNumber,Department,Address,TaxablePay,Deduction,IncomeTax,NetPay) VALUES('Terissa','525245','2018/03/01','F','7345787969','Marketing','Mumbai','0','0','0','0');
