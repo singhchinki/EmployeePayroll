@@ -18,3 +18,8 @@ select * from employee_payrole where StartDate between cast('2005-01-01' as date
 alter table employee_payrole add Gender char(1);
 update employee_payrole set Gender='M';
 update employee_payrole set Gender='F' where Id='1';
+select SUM(Salary) as TotalSalary,Gender from employee_payrole group by Gender;
+select AVG(Salary) as AverageSalary from employee_payrole group by Gender;
+select count(Salary) as TotalSalary,Gender from employee_payrole group by Gender;
+select Min(Salary) as MinSalary,Gender from employee_payrole group by Gender;
+select Max(Salary) as MaxSalary,Gender from employee_payrole group by Gender;
